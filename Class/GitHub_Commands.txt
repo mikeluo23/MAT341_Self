@@ -1,0 +1,5 @@
+Some GitHub Commands
+
+git add Class
+git commit -m "notes for yourself"
+git push
