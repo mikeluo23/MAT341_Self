@@ -43,4 +43,10 @@ function vary_Error_Tolerances_To_Compare()
 % "close" to the minimum very quickly but once it gets close, it struggles
 % to become more precise. Once the vertexes get close to the minimum in
 % SPI, subsequent vertexes change by such a small amount that it becomes
-% difficult to obtain extreme precision.
+% difficult to obtain extreme precision. This is because the 3 points in SPI become
+% approximately collinear which makes finding more accurate consecutive parabolas more
+% difficult.
+
+% Note: For large error tolerances, row reduced echelon form (RREF) was more efficient. 
+% For small error tolerances, inverted matrices (IM) were utilized. For this algorithm, 
+% IM is more optimal (commented out in the SPI code).
