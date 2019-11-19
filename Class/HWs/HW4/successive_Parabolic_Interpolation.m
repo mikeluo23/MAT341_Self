@@ -19,10 +19,10 @@ function N = successive_Parabolic_Interpolation(tol)
         
         % using inverse matrix to solve linear equation, above uses rref
         % (seemingly more efficient)
-        %mat = [x1^2 x1 1; x2^2 x2 1; x3^2 x3 1];
-        %sols = [f(x1); f(x2); f(x3)];
-        %vals = inv(mat)*sols;
-        %vertex = -vals(2)/(2*vals(1));
+        mat = [x1^2 x1 1; x2^2 x2 1; x3^2 x3 1];
+        sols = [f(x1); f(x2); f(x3)];
+        vals = inv(mat)*sols;
+        vertex = -vals(2)/(2*vals(1));
         
         
         % switches points accordingly until all three converge to a

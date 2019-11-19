@@ -5,7 +5,7 @@ function vary_Error_Tolerances_To_Compare()
     
     % calls minimization algorithms for the desired error tolerances
     for k = 1:length(errTolVec)
-        goldenSearchVec(k) = golden_search(errTolVec(k));
+        goldenSearchVec(k) = golden_Search(errTolVec(k));
         successive_Parabolic_InterpolationVec(k) = successive_Parabolic_Interpolation(errTolVec(k));
     end
     
