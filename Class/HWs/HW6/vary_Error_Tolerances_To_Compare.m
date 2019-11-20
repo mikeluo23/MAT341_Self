@@ -36,7 +36,8 @@ figure(2)
     
     
 % 4a) With the optimal step-size of gamma = 1, the fixed step-size converged
-% faster than the Barzilai-Borwein step-size for all iterations.
+% faster than the Barzilai-Borwein step-size for all of the tested error
+% tolerances.
 
 % 4b) When the gamma value is changed to 0.5, the Barzilai-Borwein
 % step-size converges faster for all accuracy thresholds.
