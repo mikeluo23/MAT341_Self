@@ -2,7 +2,7 @@ function vary_StepSize_Gamma_To_Optimize()
 
 % initialize tolerance and the gamma range to sweep across
 tol = 10e-8;
-gamma = 0.05:0.01:1.5;
+gamma = 0.1:0.02:1.5;
 
 % find number of iterations for each step-size in the vector
 for i = 1:length(gamma)
