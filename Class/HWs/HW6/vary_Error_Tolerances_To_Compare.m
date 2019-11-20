@@ -1,8 +1,9 @@
 function vary_Error_Tolerances_To_Compare()
 
 % Initialize step size (for fixed step) and tolerance vector 
-%gamma = 1.05;
-gamma = 0.5;
+
+gamma = 1.0;
+%gamma = 0.5;
 errTolVec = [1e-1 1e-2 1e-3 1e-4 1e-5 1e-6 1e-7 1e-8 1e-9 1e-10 1e-11];
 
 % Stores number of iterations at each tolerance for both fixed-step and
@@ -34,9 +35,8 @@ figure(2)
     
     
     
-% 4a) For high accuracy (low error tolerances) the Barzilai-Borwein
-% algorithm converges faster, but the fixed step-size converges faster for
-% very low accuracy thresholds. 
+% 4a) With the optimal step-size of gamma = 1, the fixed step-size converged
+% faster than the Barzilai-Borwein step-size.
 
 % 4b) When the gamma value is changed to 0.5, the Barzilai-Borwein
 % step-size converges faster for all accuracy thresholds.
