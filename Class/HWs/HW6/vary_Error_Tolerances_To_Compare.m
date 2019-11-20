@@ -36,13 +36,13 @@ figure(2)
     
     
 % 4a) With the optimal step-size of gamma = 1, the fixed step-size converged
-% faster than the Barzilai-Borwein step-size.
+% faster than the Barzilai-Borwein step-size for all iterations.
 
 % 4b) When the gamma value is changed to 0.5, the Barzilai-Borwein
 % step-size converges faster for all accuracy thresholds.
 
 % 4c) Primarily, the Barzilai-Borwein step-size is usually more accurate.
-% It is dynamic to find the optimal step-size to minimize the number of
+% It is dynamic to find an optimal step-size to minimize the number of
 % iterations.
 
 % 4d) I would chose the Barzilai-Borwein algorithm because it is a
